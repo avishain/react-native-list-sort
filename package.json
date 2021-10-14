@@ -1,18 +1,15 @@
 {
-  "name": "playground",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
-  },
-  "dependencies": {
+  "main": "./src/SortableList",
+  "name": "react-native-list-sort",
+  "description": "Sortable list for react-native apps",
+  "version": "1.0.0",
+  "homepage": "https://github.com/D10S60948/react-native-list-sort#react-native-list-sort",
+  "private": false,
+  "types": "./src/SortableList", 
+  "files": ["src"],
+  "peerDependencies": {
     "react": "17.0.2",
     "react-native": "0.65.1",
-    "react-native-calendars": "^1.1266.0",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-reanimated": "^2.2.2"
   },
@@ -35,15 +32,9 @@
   "resolutions": {
     "@types/react": "^17"
   },
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
-  }
+  "keywords": [
+      "list",
+      "sort",
+      "expo"
+  ]
 }
