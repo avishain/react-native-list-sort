@@ -29,10 +29,10 @@ import List from 'react-native-list-sort';
 ## Examples
 <div style="display:flex;flex-direction:row">
     <kbd>
-      <img src="https://user-images.githubusercontent.com/37651196/137318224-5b68ad4b-7ff1-4a90-b36e-d19fc9154991.gif" height="600" width="280" />
+      <img src="https://user-images.githubusercontent.com/37651196/137317349-41695ec8-0152-4f73-bc4f-bbb05413768f.gif" height="600" width="280" />
     </kbd>
     <kbd>
-      <img src="https://user-images.githubusercontent.com/37651196/137317349-41695ec8-0152-4f73-bc4f-bbb05413768f.gif" height="600" width="280" />
+      <img src="https://user-images.githubusercontent.com/37651196/137318224-5b68ad4b-7ff1-4a90-b36e-d19fc9154991.gif" height="600" width="280" />
     </kbd>
 </div>
 <br/>
