@@ -1,9 +1,11 @@
 import React, { ReactNode } from 'react';
-import { Dimensions, StyleSheet, View } from 'react-native';
+import { Dimensions, Platform, StyleSheet, View } from 'react-native';
 import { PanGestureHandler, PanGestureHandlerGestureEvent } from 'react-native-gesture-handler';
 import Animated, { runOnJS, scrollTo, useAnimatedGestureHandler, useAnimatedReaction, useAnimatedStyle, useSharedValue, withSpring, withTiming } from 'react-native-reanimated';
 import { getOrder, getPosition } from './Config';
+
 const { height } = Dimensions.get('window');
+const isAndroid = Platform.OS === 'android';
 
 interface ItemProps {
   item: any;
@@ -29,15 +31,23 @@ const Item = ({ dragableAreaSize, item, positions, index, containerHeight = heig
   });
 
   const itemStyle = useAnimatedStyle(() => {
-    return {
-      top: topAnimatedValue.value,
-      zIndex: zIndex.value,
-      elevation: zIndex.value,
-      shadowColor: 'black',
-      shadowOffset: { width: zIndex.value, height: 0.5 * zIndex.value },
-      shadowOpacity: 0.3,
-      shadowRadius: 0.8 * zIndex.value
-    }
+    return isAndroid ?
+      {
+        top: topAnimatedValue.value,
+        zIndex: zIndex.value,
+        elevation: zIndex.value,
+        shadowColor: 'black'
+      }
+      :
+      {
+        top: topAnimatedValue.value,
+        zIndex: zIndex.value,
+        elevation: zIndex.value,
+        shadowColor: 'black',
+        shadowOffset: { width: zIndex.value, height: 0.5 * zIndex.value },
+        shadowOpacity: 0.3,
+        shadowRadius: 0.8 * zIndex.value
+      };
   });
 
   const onGestureEvent = useAnimatedGestureHandler<PanGestureHandlerGestureEvent, { y: number, order: number }>({
