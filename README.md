@@ -6,20 +6,10 @@
 
 ## Getting started
 `npm install react-native-list-sort`
+
 <br/>
 
 ## Usage
-#### Examples - display
-
-<div style="display:flex;flex-direction:row">
-  <img src="https://user-images.githubusercontent.com/37651196/137318224-5b68ad4b-7ff1-4a90-b36e-d19fc9154991.gif" height="600" width="280" />
-  <img src="https://user-images.githubusercontent.com/37651196/137317349-41695ec8-0152-4f73-bc4f-bbb05413768f.gif" height="600" width="280" />
-</div>
-<br/>
-
-#### Examples - code (reflects the short video above)
-
-
 ```javascript
 import List from 'react-native-list-sort';
 ```
@@ -36,6 +26,24 @@ import List from 'react-native-list-sort';
 
 <br/>
 
+## Examples
+<div style="display:flex;flex-direction:row">
+    <kbd>
+      <img src="https://user-images.githubusercontent.com/37651196/137318224-5b68ad4b-7ff1-4a90-b36e-d19fc9154991.gif" height="600" width="280" />
+    </kbd>
+    <kbd>
+      <img src="https://user-images.githubusercontent.com/37651196/137317349-41695ec8-0152-4f73-bc4f-bbb05413768f.gif" height="600" width="280" />
+    </kbd>
+</div>
+<br/>
+<div style="display:flex;flex-direction:row">
+   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
+    <a href="https://github.com/D10S60948/react-native-list-sort/blob/main/examples/Example_1.tsx" target="_blank">Example 1</a>
+   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <a href="https://github.com/D10S60948/react-native-list-sort/blob/main/examples/Example_2.tsx" target="_blank">Example 2</a>
+</div>
+<br/>
+
 ## API
 | Property | Type | Required | Default |
 | :---     |:----:|  :-----: | :-----: | 
@@ -46,8 +54,11 @@ import List from 'react-native-list-sort';
 | dragableAreaSize | number | no | itemHeight |
 
 ##### * dragableAreaSize enables the capability to make only part of the item draggable (default to the left part of item)
+<br/>
 
-<br/><br/>
+## Inspiration
+<a href="https://www.youtube.com/watch?v=-39OEXk_mWc" target="_blank">William Candillon - Chrome Drag-to-Sort - “Can it be done in React Native?” - season 4</a>
+<br/>
 
 ## License
 This project is licensed under the MIT License
