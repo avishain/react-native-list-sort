@@ -2,11 +2,13 @@
   "main": "./src/SortableList",
   "name": "react-native-list-sort",
   "description": "Sortable list for react-native apps",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "homepage": "https://github.com/D10S60948/react-native-list-sort#react-native-list-sort",
   "private": false,
-  "types": "./src/SortableList", 
-  "files": ["src"],
+  "types": "./src/SortableList",
+  "files": [
+    "src"
+  ],
   "peerDependencies": {
     "react": "^17.0.2",
     "react-native": "^0.65.1",
@@ -33,8 +35,8 @@
     "@types/react": "^17"
   },
   "keywords": [
-      "list",
-      "sort",
-      "expo"
+    "list",
+    "sort",
+    "expo"
   ]
 }

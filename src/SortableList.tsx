@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LayoutChangeEvent, View } from 'react-native';
+import { LayoutChangeEvent, View, StyleProp, ViewStyle } from 'react-native';
 import Animated, { useAnimatedRef, useAnimatedScrollHandler, useSharedValue } from 'react-native-reanimated';
 import Item from './Item';
 
@@ -9,9 +9,11 @@ interface SortableListProps {
   onOrderChange: (item: any) => void;
   renderItem: (item: any) => JSX.Element;
   dragableAreaSize?: number;
+  style?: StyleProp<ViewStyle>;
+  contentContainerStyle?: StyleProp<ViewStyle>;
 }
 
-const SortableList = ({ items, itemHeight, onOrderChange, renderItem, dragableAreaSize }: SortableListProps) => {
+const SortableList = ({ items, itemHeight, onOrderChange, renderItem, dragableAreaSize, style = {}, contentContainerStyle = {} }: SortableListProps) => {
   const [containerHeight, setContainerHeight] = useState<number>();
   const positions = useSharedValue({ ...items.map((item: any, index: number) => index) });
   const scrollY = useSharedValue(0);
@@ -38,7 +40,8 @@ const SortableList = ({ items, itemHeight, onOrderChange, renderItem, dragableAr
   return (
     <View onLayout={onLayout}>
       <Animated.ScrollView ref={scrolViewRef}
-        contentContainerStyle={{ height: items.length * itemHeight }}
+        style={style}
+        contentContainerStyle={[{ height: items.length * itemHeight }, contentContainerStyle]}
         bounces={false}
         scrollEventThrottle={8}
         onScroll={onScroll}
