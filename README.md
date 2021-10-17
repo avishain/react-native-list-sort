@@ -6,7 +6,11 @@
 
 ## Getting started
 `npm install react-native-list-sort`
-
+<br/>
+##### NOTE:<br/>This package uses react-native-reanimated (version 2) and react-native-gesture-handler.<br/>In case you do not have these pacakges installed please see and follow the Softare-Mansion docs:
+<a href="https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/installation/" target="_blank">react-native-reanimated</a>
+<br/>
+<a href="https://docs.swmansion.com/react-native-gesture-handler/docs/" target="_blank">react-native-gesture-handler</a>
 <br/>
 
 ## Usage
