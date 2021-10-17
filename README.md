@@ -52,6 +52,8 @@ import List from 'react-native-list-sort';
 | itemHeight | Number | yes | - |
 | onOrderChange | (sortedList: Array) => void | yes | - |
 | dragableAreaSize | number | no | itemHeight |
+| style | style | no | - |
+| contentContainerStyle | style | no | - |
 
 ##### * dragableAreaSize enables the capability to make only part of the item draggable (default to the left part of item)
 <br/>
